@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 import Header from './Header';
@@ -14,7 +15,10 @@ const Home = () => {
                 <div className="text">
                     <h1>Feel The Music</h1>
                     <p>stream over 20 thousand songs with one click</p>
-                    <a href="/join">Join Now</a>
+                    {/* <a href="/join">Join Now</a> */}
+                    <NavLink exact to="join">
+                        Join Now
+                    </NavLink>
                 </div>
             </div>
             <div className="circle-1"></div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 import Header from './Header';
@@ -28,7 +29,10 @@ const Join = () => {
                             <label>Password:</label>
                             <input type="password" />
                         </div>
-                        <a href="/">Join Now</a>
+                        {/* <a href="/">Join Now</a> */}
+                        <NavLink exact to="/">
+                            Join Now
+                        </NavLink>
                     </div>
                 </div>
             </JoinPage>
